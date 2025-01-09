@@ -1,6 +1,5 @@
 from github import Github
 from github import Auth
-from time import sleep
 import config
 
 def verify_lang(language):
