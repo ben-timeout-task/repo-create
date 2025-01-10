@@ -18,7 +18,7 @@ def check_repo_exists(repo_name):
 auth = Auth.Token(config.AUTH_TOKEN)
 g = Github(auth=auth)
 user = g.get_user()
-org = g.get_organization('ben-timeout-task')
+org = g.get_organization(config.ORG)
 team = org.get_team_by_slug('Engineers')
 
 #enter repo name and language
